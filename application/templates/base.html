@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>{{response.app.page.title}}</title>
+
+    <link rel="canonical" href="{{response.app.page.url}}" />
+    <meta name="title" content="{{response.app.page.title}}" />
+    <meta name="description" content="{{response.app.page.description}}">
+    <meta name="twitter:card" value="summary" />
+    <meta name="twitter:url" value="{{response.app.page.url}}" />
+    <meta name="twitter:title" value="{{response.app.page.title}}" />
+    <meta name="twitter:description" value="{{response.app.page.description}}" />
+    <meta name="twitter:image" value="{{response.app.url_root}}static/img/" />
+    <meta property="og:title" content="{{response.app.page.title}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{response.app.page.url}}" />
+    <meta property="og:image" content="{{response.app.url_root}}static/img/" />
+    <meta property="og:site_name" content="The Denver Post" />
+    <meta property="og:description" content="{{response.app.page.description}}" />
+    <meta property="article:publisher" content="https://www.facebook.com/denverpost" />
+
+    <script>
+        // Only load foundation.css on handheld devices
+        if ( window.screen.availWidth < 769 || window.innerWidth < 769 )
+        {
+            var link = document.createElement( "link" );
+            link.href = "http://cdn.foundation5.zurb.com/foundation.css";
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.media = "screen,print";
+            document.getElementsByTagName("head")[0].appendChild(link);
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="{{response.app.url_root}}static/css/site.css">
+    <style type="text/css">
+{% block style %}{% endblock style %}
+    </style>
+
+    
+    <script>
+        var iframe = '', kiosk = '';
+        if ( document.location.hash === '#iframe' ) { iframe = 1 }
+        if ( window.top !== window.self ) { iframe = 1; }
+        if ( iframe === '' ) {
+        }
+    </script>
+    <script>
+        if ( iframe === '' ) {
+        (function() {
+          var useSSL = "https:" == document.location.protocol;
+          var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+          document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+         })();
+        }
+    </script>
+    <script>
+      if ( typeof googletag !== "undefined" ) { }
+    </script>
+    {% block head %}{% endblock head %}
+</head>
+<body>
+    <header></header>
+
+    <main>
+
+        <p id="datestamp" class="stamp"><span>{{response.app.sitename}}, last updated {{''|next_update('this')}}</span></p>
+        {% include 'inc_nav.html' %}
+        <div id="breadcrumbs">
+            {% block breadcrumbs %}
+            <a href="/">Home</a>
+            &rsaquo; <a href="/sports">Sports</a>
+            {% endblock breadcrumbs %}
+        </div>
+
+        <div class="row">
+
+            <h1>{{response.app.page.title}}</h1>
+
+            <div class="maincol small-12 large-9 columns">
+            {% block content %}{% endblock content %}
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+    <noscript><p id="timestamp" class="stamp">Page generated at {{''|timestamp}}</p></noscript>
+    </footer>
+    <script>
+    if ( iframe === 1 )
+    {
+        // *** Loop through all the relative links and add target="_parent"
+        // as well as the host domain, http://extras.denverpost.com/app/bill-tracker/
+        // to each href.
+    }
+    </script>
+</body>
+</html>
