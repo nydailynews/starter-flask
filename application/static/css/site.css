@@ -1,38 +1,30 @@
-body { margin:0; }
-#wrapper {
-    width:1008px;
-    margin:10px auto;
-}
-#dfmEndFooterLinks ul li {
-    list-style-type:none;
-    margin-left:15px!important;
-}
+body {
+    margin:0;
+    width: 100%;
+    overflow: hidden;
+} 
 
 @media only screen and (max-width: 768px) {
     /* Adjust the layout */
-    .adElement { width: 100%!important; }
     body h1, body h2, body h3, body h4, body h5, body h6 { line-height: 1; }
     body h1 { 
         width: 100%!important; 
         font-size: 2em!important;
     }
 
-    /* Tweaks to align rows and make things clickable */
-    div.body { height: 30px; }
-    body dl dt { margin-bottom: 0.75rem; }
-    .maincol, .sidebarcol { clear: both; }
-
     /* Fix line-height on breadcrumbs */
-    #breadcrumbs { line-height: 14px; 
+    #breadcrumbs {
+        line-height: 14px; 
         margin-bottom: 10px;
     }
     /* Fix line-height on nav */
-    nav ul { line-height: 0; 
+    nav ul {
+        line-height: 0; 
         margin-bottom: 5px;
     }
     /* More line-height fixes */
-    .stamp { margin-top: 10px;
-    }
+    .stamp { margin-top: 10px; }
+
     /* We want bullets on list items on mobile to make lists more readable. */
     .row ul {
         list-style-type: disc;
@@ -40,23 +32,18 @@ body { margin:0; }
     }
 }
 
-footer { clear: both; }
 footer p, #content-footer p { text-align: center; }
-h3 { margin-top: 15px; }
 hr {
     width: 80%;
     margin: 8px auto;
 }
 .ad { margin-bottom: 10px; }
 .row { margin-left: 0; }
-nav {
-    clear: both;
-}
 nav ul li {
     display: inline;
 }
 nav ul li:after {
-    content: " ~ ";
+    content: " ᴥ ";
 }
 nav ul li:last-child:after {
     content: "";
@@ -104,15 +91,4 @@ nav ul:after {
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
     text-decoration: underline;
-}
-@media only screen and (min-width: 769px) {
-.maincol {
-    width: 650px;
-    float: left;
-}
-.sidebarcol {
-    width: 300px;
-    float: right;
-    margin-left: 15px;
-}
 }

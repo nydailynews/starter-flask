@@ -3,11 +3,10 @@
 {% block description %}{% endblock description %}
 {% block subhead %}{{ page.meta.title }}{% endblock subhead %}
 {% block breadcrumbs %}{{ super() }}
-&rsaquo; <a href="http://www.denverpost.com/bill-tracker">Bill Tracker</a>{% endblock breadcrumbs %}
+&rsaquo; <a href="../parent">Parent Page</a>{% endblock breadcrumbs %}
 {% block style %}{% endblock style %}
 
 {% block timestamp %}{% endblock timestamp %}
-{% block ticker %}{% endblock ticker %}
 
 {% block content %}
 {{page}}
