@@ -1,5 +1,14 @@
 # Default Flask App
+The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes with flask plus tools for turning your flask app into flatfiles.
 
+## Usage
+
+1. Check out the code,
+2. Open up terminal, 
+3. Create a virtualenv for your project (`pip install virtualenv` from anywhere in your terminal should work. [More here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/))
+4. `pip install -r requirements.txt` from your terminal
+5. `python runserver.py` gets you a webserver running on port 5000.
+6. [http://localhost:5000](http://localhost:5000)
 
 # License
 
