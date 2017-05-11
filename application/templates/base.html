@@ -1,27 +1,182 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-
     <title>{{response.app.page.title}}</title>
+    <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
+    <!-- DEFAULT -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" href="">
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <link rel="canonical" href="{{response.app.page.url}}" />
-    <meta name="title" content="{{response.app.page.title}}" />
-    <meta name="description" content="{{response.app.page.description}}">
-    <meta name="twitter:card" value="summary" />
-    <meta name="twitter:url" value="{{response.app.page.url}}" />
-    <meta name="twitter:title" value="{{response.app.page.title}}" />
-    <meta name="twitter:description" value="{{response.app.page.description}}" />
-    <meta name="twitter:image" value="{{response.app.url_root}}static/img/" />
-    <meta property="og:title" content="{{response.app.page.title}}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{response.app.page.url}}" />
-    <meta property="og:image" content="{{response.app.url_root}}static/img/" />
-    <meta property="og:site_name" content="The Denver Post" />
+    <!-- Titles -->
+    <meta property="og:title" content='{{response.app.page.title}}' />
+    <meta name="twitter:title" content='{{response.app.page.title}}' />
+    <meta name="parsely-title" content='{{response.app.page.title}}' />
+
+    <!-- Description -->
+    <meta name="description" content="{{response.app.page.description}}" />
     <meta property="og:description" content="{{response.app.page.description}}" />
+    <meta name="twitter:description" content="{{response.app.page.description}}" />
+
+    <!-- KEYWORD -->
+    <meta name="keywords" content="KEYWORDS" />
+    <meta name="news_keywords" content="KEYWORDS" />
+    <meta name="parsely-tags" content="interactive,KEYWORDS" />
+
+    <!-- LINK -->
+    <link rel="canonical" href="{{response.app.page.url}}">
+    <meta property="og:url" content="{{response.app.page.url}}" />
+    <meta name="twitter:url" content="{{response.app.page.url}}" />
+    <meta name="parsely-link" content="{{response.app.page.url}}" />
+
+    <!-- THUMBNAIL IMAGE-->
+    <meta property="og:image" content="{{response.app.url_root}}static/img/" />
+    <meta name="twitter:image" content="{{response.app.url_root}}static/img/" />
+    <meta name="twitter:image:alt" content="Description of above image" />
+    <meta name="parsely-image-url" content="{{response.app.url_root}}static/img/" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="512" />
+
+    <meta name="twitter:card" value="summary" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="The Denver Post" />
     <meta property="article:publisher" content="https://www.facebook.com/denverpost" />
 
+    <!-- NO NEED TO FILL -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="http://interactive.nydailynews.com"/>
+    <meta name="twitter:site" content="@nydailynews">
+    <meta name="parsely-type" content="post" />
+    <meta name="decorator" content="responsive" />
+    <meta name="parsely-section" content="Interactive" />
+    <meta name="parsely-author" content="Interactive" />
+    <meta name="nydn_section" content="NY Daily News" />
+    <meta name="robots" content="NOARCHIVE" />
+    <meta name="msvalidate.01" content="02916AAC0DA8B068EFE01D721E03ED7E" />
+    <meta name="p:domain_verify" content="78efe4f5c9935744af497772f68a0ee7" />
+    <meta property="fb:app_id" content="107464888913" />
+    <meta property="fb:admins" content="1594068001" />
+    <meta property="fb:pages" content="268914272540" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="NY Daily News" />
+    <meta property="article:publisher" content="https://www.facebook.com/NYDailyNews/" />
+    <meta name="searchBinding" content="/search" />
+    <meta name="localeCountry" content="US"/>
+    <meta name="localeLanguage" content="en" />
+
+    <!-- ADOBE ANALYTICS -->
+    <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open%20Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
+    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
+      
+    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
+    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
+    <script>
+        var nydn = nydn || {
+            "section": "NYDailyNews",
+            "subsection": "news",
+            "template": "article",
+            "revision": "201609014009",
+            "bidder": { contains: function() {} },
+            "targetPath": document.location.pathname
+        };
+        var nydnDO = [ { 
+            'title':'xxx{{response.app.page.title}}xxx', 
+            'link':'{{response.app.page.url}}', 
+            'p_type':'interactive', 
+            'section':'interactive' 
+        }];
+    </script>
+    
+    <!-- ADS-START -->
+     <!-- ads -->
+        <script>
+          var googletag = googletag || {};
+          googletag.cmd = googletag.cmd || [];
+          (function() {
+          var gads = document.createElement('script');
+          gads.async = true;
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') + 
+          '//www.googletagservices.com/tag/js/gpt.js';
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+          })();
+        var is_mobile = /Android|webOS|iPhone|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        var ad_tag = 'quiz';
+        if ( typeof config !== 'undefined' && config.ad_tag !== 'undefined' ) ad_tag += '-' + config.ad_tag;
+        </script>
+        <script>
+      if( !is_mobile ) {
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/NYDN/Interactive',  [[728, 90]], 'div-gpt-ad-x101').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x50");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x55");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x55");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/NYDN/Interactive',  [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x86");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+        }
+        </script>
+        <!-- mobile ad -->
+        <script>
+        if( is_mobile ) {        
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[320, 50]], 'div-gpt-ad-x101').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x101");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-1').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x35");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-2').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x36");          
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/4692832/M.NYDN/Interactive', [[300, 250]], 'div-gpt-ad-1423507761396-3').addService(googletag.pubads())
+          .setTargeting("interactive",ad_tag)
+          .setTargeting("position","x37");
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+        }
+        </script>
+    <!-- ADS-END -->
     <script>
         // Only load foundation.css on handheld devices
         if ( window.screen.availWidth < 769 || window.innerWidth < 769 )
