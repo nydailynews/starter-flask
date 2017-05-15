@@ -1,5 +1,5 @@
 # Default Flask App
-The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes with flask plus tools for turning your flask app into flatfiles.
+The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes with flask plus tools for turning your flask app into flatfiles. Based on [The Denver Post's Bill Tracker flask app](https://github.com/denverpost/bill-tracker), which was based on [the Denver Crimes flask app](http://crime.denverpost.com/about/). 
 
 ## Usage
 
