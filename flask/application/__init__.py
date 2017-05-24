@@ -14,7 +14,13 @@ app.debug = True
 page = {
     'title': '',
     'url': '',
-    'description': ''
+    'description': '',
+    'author': '',
+    'datestamp': '',
+    'keywords': '',
+    'keywords_array': '',
+    'shareimg': '',
+    'shareimgdesc': '',
 }
 
 pages = FlatPages(app)

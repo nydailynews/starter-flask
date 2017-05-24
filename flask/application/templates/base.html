@@ -12,19 +12,18 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 
-    <!-- Titles -->
+    <!-- TITLES -->
     <meta property="og:title" content='{{response.app.page.title}}' />
     <meta name="twitter:title" content='{{response.app.page.title}}' />
-    <meta name="parsely-title" content='{{response.app.page.title}}' />
 
-    <!-- Description -->
+    <!-- DESCRIPTION -->
     <meta name="description" content="{{response.app.page.description}}" />
     <meta property="og:description" content="{{response.app.page.description}}" />
     <meta name="twitter:description" content="{{response.app.page.description}}" />
 
     <!-- KEYWORD -->
-    <meta name="keywords" content="KEYWORDS" />
-    <meta name="news_keywords" content="KEYWORDS" />
+    <meta name="keywords" content="{{response.app.page.keywords}}" />
+    <meta name="news_keywords" content="{{response.app.page.keywords}}" />
 
     <!-- LINK -->
     <link rel="canonical" href="{{response.app.page.url}}">
@@ -32,9 +31,9 @@
     <meta name="twitter:url" content="{{response.app.page.url}}" />
 
     <!-- THUMBNAIL IMAGE-->
-    <meta property="og:image" content="{{response.app.url_root}}static/img/" />
-    <meta name="twitter:image" content="{{response.app.url_root}}static/img/" />
-    <meta name="twitter:image:alt" content="Description of above image" />
+    <meta property="og:image" content="{{response.app.url_root}}static/img/{{response.app.page.shareimg}}" />
+    <meta name="twitter:image" content="{{response.app.url_root}}static/img/{{response.app.page.shareimg}}" />
+    <meta name="twitter:image:alt" content="{{response.app.page.shareimgdesc}}" />
     <meta property="og:image:width" content="1024" />
     <meta property="og:image:height" content="512" />
 
@@ -45,11 +44,11 @@
             "@type": "NewsArticle",
             "headline": "",
             "url": "{{response.app.page.url}}",
-            "thumbnailUrl": "{{response.app.url_root}}static/img/",
-            "dateCreated": "2017-04-28T07:00:00Z",
+            "thumbnailUrl": "{{response.app.url_root}}static/img/{{response.app.page.shareimg}}",
+            "dateCreated": "{{response.app.page.datestamp}}T07:00:00Z",
             "articleSection": "Interactive",
             "creator": [{{response.app.page.author}}],
-            "keywords": ["interactive",{{response.app.page.keywords}}]
+            "keywords": ["interactive",{{response.app.page.keywords_array}}]
         }
     </script>
 
@@ -57,10 +56,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:domain" content="http://interactive.nydailynews.com"/>
     <meta name="twitter:site" content="@nydailynews">
-    <meta name="parsely-type" content="post" />
     <meta name="decorator" content="responsive" />
-    <meta name="parsely-section" content="Interactive" />
-    <meta name="parsely-author" content="Interactive" />
     <meta name="nydn_section" content="NY Daily News" />
     <meta name="robots" content="NOARCHIVE" />
     <meta name="msvalidate.01" content="02916AAC0DA8B068EFE01D721E03ED7E" />
@@ -189,7 +185,6 @@
     <style type="text/css">
 {% block style %}{% endblock style %}
     </style>
-
     
     <script>
         var iframe = '', kiosk = '';
@@ -199,6 +194,9 @@
         }
     </script>
     {% block head %}{% endblock head %}
+
+    <script>var nav_params = {section: 'New York', url: 'http://www.nydailynews.com/new-york'};</script>
+    <script src="http://interactive.nydailynews.com/library/vendor-nav/vendor-include.js" defer></script>
 </head>
 <body id="nydailynews" data-section="nydailynews" data-subsection="NY Daily News">
 
