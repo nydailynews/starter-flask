@@ -31,7 +31,7 @@ def index():
     response = {
         'app': app
     }
-    return render_template('home.html', response=response)
+    return render_template('index.html', response=response)
 
 # =========================================================
 # === NOT DEPLOYED YET === #

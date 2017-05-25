@@ -205,26 +205,22 @@
 <!-- SITEHEADER-END -->
 
     <main>
-
-        <p id="datestamp" class="stamp"><span>{{response.app.sitename}}, last updated {{''|next_update('this')}}</span></p>
-        {% include 'inc_nav.html' %}
-        <div id="breadcrumbs">
-            {% block breadcrumbs %}
-            <a href="/">Home</a>
-            &rsaquo; <a href="/next-section">Next Section</a>
-            {% endblock breadcrumbs %}
-        </div>
-
-        <div class="row">
+        <article>
+            <p id="datestamp" class="stamp"><span>{{response.app.sitename}}, last updated {{''|next_update('this')}}</span></p>
+            {% include 'inc_nav.html' %}
+            <div id="breadcrumbs">
+                {% block breadcrumbs %}
+                <a href="/">Home</a>
+                &rsaquo; <a href="/next-section">Next Section</a>
+                {% endblock breadcrumbs %}
+            </div>
 
             <h1>{{response.app.page.title}}</h1>
 
             <div class="maincol small-12 large-9 columns">
             {% block content %}{% endblock content %}
             </div>
-        </div>
-
-
+        </article>
     </main>
 
     <footer>
