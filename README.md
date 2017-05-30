@@ -13,6 +13,7 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
         4. `source /usr/local/bin/virtualenvwrapper.sh`
         5. `cd path/to/your/repo`
         6. `mkvirtualenv REPONAME`
+        7. Now back to the rest of the usage instructions below...
 4. `pip install -r requirements.txt` from your terminal
 5. `python runserver.py` gets you a webserver running on port 5000.
 6. [http://localhost:5000](http://localhost:5000)
