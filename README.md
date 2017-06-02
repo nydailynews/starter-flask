@@ -6,6 +6,14 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
 1. Check out the code,
 2. Open up terminal, 
 3. Create a virtualenv for your project (`pip install virtualenv` from anywhere in your terminal should work. [More here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/))
+    1. To get set up with virtual environments (Mac and *nix):
+        1. `pip install virtualenv` (if you get a "requirement already satisfied" response, that's okay, continue along)
+        2. `pip install virtualenvwrapper` (if you get a "requirement already satisfied" response, that's okay too)
+        3. `export WORKON_HOME=~/Envs` _* Note: It's worth adding this line to your `~/.bash_profile` file_
+        4. `source /usr/local/bin/virtualenvwrapper.sh` _* Note: It's worth adding this line to your `~/.bash_profile` file too_
+        5. `cd path/to/your/repo`
+        6. `mkvirtualenv REPONAME`
+        7. Now back to the rest of the usage instructions below...
 4. `pip install -r requirements.txt` from your terminal
 5. `python runserver.py` gets you a webserver running on port 5000.
 6. [http://localhost:5000](http://localhost:5000)
