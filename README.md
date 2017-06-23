@@ -3,7 +3,7 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
 
 ## Usage
 
-1. Check out the code,
+1. Clone REPONAME,
 2. Open up terminal, 
 3. Create a virtualenv for your project (`pip install virtualenv` from anywhere in your terminal should work. [More here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/))
     1. To get set up with virtual environments (Mac and *nix):
@@ -15,6 +15,7 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
         6. `mkvirtualenv REPONAME`
         7. Now back to the rest of the usage instructions below...
 4. `pip install -r requirements.txt` from your terminal
+9. `cd` into the application directory
 5. `python runserver.py` gets you a webserver running on port 5000.
 6. [http://localhost:5000](http://localhost:5000)
 
