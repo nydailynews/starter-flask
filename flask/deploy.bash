@@ -3,7 +3,7 @@
 ENVIRON='PROD'
 export environ=$ENVIRON
 SERVER='qa'
-DIR='/path/to/project/root/'
+DIR='/path/to/directory/below/the/project/directory/'
 PROJECT='projectname'
 LOCATION_OVERRIDE=0
 html_only() { 
