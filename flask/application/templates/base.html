@@ -4,8 +4,8 @@
     <title>{{response.app.page.title}}</title>
     <link rel="icon" type="image/png" href="http://interactive.nydailynews.com/favicons.png">
     <!-- DEFAULT -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link rel="apple-touch-icon" href="">
@@ -75,10 +75,10 @@
     <script src="//assets.adobedtm.com/4fc527d6fda921c80e462d11a29deae2e4cf7514/satelliteLib-c91fdc6ac624c6cbcd50250f79786de339793801.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Open%20Sans|Open+Sans+Condensed:300,700|PT+Serif' rel='stylesheet' type='text/css'>
-    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js?r=2016LIST" defer></script>
+    <script data-main="http://assets.nydailynews.com/nydn/js/rh.js?r=20170405001" src="http://assets.nydailynews.com/nydn/js/require.js" defer></script>
       
-    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css?r=2016LIST">
-    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css?r=2016LIST">
+    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/rh.css">
+    <link rel="stylesheet" type="text/css" href="http://assets.nydailynews.com/nydn/c/ra.css">
     <script>
         var nydn = nydn || {
             "section": "NYDailyNews",
@@ -99,31 +99,12 @@
     <!-- ADS-START -->
     <script src="http://interactive.nydailynews.com/includes/ads/ads.js" onload="nydn_ads('project');"></script>
     <!-- ADS-END -->
-    <script>
-        // Only load foundation.css on handheld devices
-        if ( window.screen.availWidth < 769 || window.innerWidth < 769 )
-        {
-            var link = document.createElement( "link" );
-            link.href = "http://cdn.foundation5.zurb.com/foundation.css";
-            link.type = "text/css";
-            link.rel = "stylesheet";
-            link.media = "screen,print";
-            document.getElementsByTagName("head")[0].appendChild(link);
-        }
-    </script>
 
     <link rel="stylesheet" type="text/css" href="{{response.app.url_root}}static/css/site.css">
     <style type="text/css">
 {% block style %}{% endblock style %}
     </style>
     
-    <script>
-        var iframe = '', kiosk = '';
-        if ( document.location.hash === '#iframe' ) { iframe = 1 }
-        if ( window.top !== window.self ) { iframe = 1; }
-        if ( iframe === '' ) {
-        }
-    </script>
     {% block head %}{% endblock head %}
 
     <script>var nav_params = {section: 'New York', url: 'http://www.nydailynews.com/new-york'};</script>
