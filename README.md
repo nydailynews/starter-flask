@@ -23,7 +23,7 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
 
 The MIT License (MIT)
 
-Copyright © 2017 New York Daily News
+Copyright © 2017-2018 New York Daily News
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
