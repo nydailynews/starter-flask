@@ -3,6 +3,7 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
 
 ## Usage
 
+### Python 2 setup
 1. Clone REPONAME,
 2. Open up terminal, 
 3. Create a virtualenv for your project (`pip install virtualenv` from anywhere in your terminal should work. [More here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/))
@@ -17,6 +18,25 @@ The New York Daily News' starter [flask](http://flask.pocoo.org/) app. Comes wit
 4. `pip install -r requirements.txt` from your terminal
 9. `cd` into the application directory
 5. `python runserver.py` gets you a webserver running on port 5000.
+6. [http://localhost:5000](http://localhost:5000)
+
+### Python 3 setup
+Note that this flask setup isn't python 3 compatible yet.
+
+1. Clone REPONAME,
+2. Open up terminal, 
+3. Create a virtualenv for your project (`pip3 install virtualenv` from anywhere in your terminal should work. [More here](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/))
+    1. To get set up with virtual environments (Mac and *nix):
+        1. `pip3 install virtualenv` (if you get a "requirement already satisfied" response, that's okay, continue along)
+        2. `pip3 install virtualenvwrapper` (if you get a "requirement already satisfied" response, that's okay too)
+        3. `export WORKON_HOME=~/Envs` _* Note: It's worth adding this line to your `~/.bash_profile` file_
+        4. `source /usr/local/bin/virtualenvwrapper.sh` _* Note: It's worth adding this line to your `~/.bash_profile` file too_
+        5. `cd path/to/your/repo`
+        6. `mkvirtualenv --python=/usr/local/bin/python3 REPONAME`
+        7. Now back to the rest of the usage instructions below...
+4. `pip3 install -r requirements.txt` from your terminal
+9. `cd` into the application directory
+5. `python3 runserver.py` gets you a webserver running on port 5000.
 6. [http://localhost:5000](http://localhost:5000)
 
 # License
